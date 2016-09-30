@@ -17,6 +17,7 @@ output=$outputPath$outputName$outputExt
 
 start_sign='/*==='
 end_sign='===*/'
+sign_length=5
 
 echo ""
 echo "\033[1;33m input file \033[0m: "$input
@@ -35,7 +36,7 @@ printLine=false
 for (( i = 0; i < $maxLine+1; i++ )); do
 	# echo "${line[$i]}"
 	
-	detect=${line[$i]:0:5}
+	detect=${line[$i]:0:$sign_length}
 	# echo $detect
 
 	if [ "$detect" == $start_sign ]; then
