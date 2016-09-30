@@ -1,8 +1,9 @@
 #!/bin/bash
 
-echo "Please input file name, ex: index_users.php"
+echo ""
+echo "\033[1;32m Please input file name, ex: index_users.php \033[0m"
 
-read -p "file : " _input
+read -p " file : " _input
 
 inputPath=$(pwd)"/"
 inputName="${_input%%.*}"
@@ -18,8 +19,8 @@ start_sign='/*==='
 end_sign='===*/'
 
 echo ""
-echo "input file : "$input
-echo "output file : "$output
+echo "\033[1;33m input file \033[0m: "$input
+echo "\033[1;33m output file \033[0m: "$output
 echo ""
 echo "============"
 
@@ -55,5 +56,7 @@ for (( i = 0; i < $maxLine+1; i++ )); do
 
 done
 
+echo ""
 echo "============"
-echo "Export file is : "$output
+echo ""
+echo "\033[1;36m Export file is \033[0m: "$output
