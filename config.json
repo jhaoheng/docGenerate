@@ -1,0 +1,18 @@
+{
+	"input":{
+		"Default_info":"Path=./ ;",
+		"path":""
+	},
+	"output":{
+		"Default_info":"Path=./ ; name=input.name ; ext=.md",
+		"path":"",
+		"name":"",
+		"ext":""
+	},
+	"sign":{
+		"Default_info":"Start='/*===' ; End='===*/' ; Length=5",
+		"Start":"",
+		"End":"",
+		"Length":""
+	}
+}
