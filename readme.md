@@ -2,8 +2,8 @@
 
 ## 目的
 
-不論是寫何種語言，都希望能把當下程式中的註解，直接轉譯為 .md，並且能最小化註解風格格式化
-方便性為，若為 restful-api 對外的文件，則可直接將要公開的文件內容輸出為 .md 檔案
+不論是寫何種語言，都希望能把當下程式中的註解，直接轉譯為 .md，並且能最小化註解風格格式化  
+方便性為，若為 restful-api 對外的文件，則可直接將要公開的文件內容輸出為 .md 檔案  
 降低文件的重複編輯性，加速工程人員對於文件註解的習慣與完整性
 
 Hope this script could help accelerate development and persist in good comment habit.
