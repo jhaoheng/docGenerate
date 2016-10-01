@@ -82,9 +82,6 @@ for (( i = 0; i < $maxLine+1; i++ )); do
 	# echo $printLine
 	if $printLine ; then
 		echo "${line[$i]}" | tee -a $output
-		if [ "${line[$i]}" == '' ]; then
-			echo "有空值"
-		fi
 	fi
 
 done
