@@ -31,7 +31,9 @@ input=$inputPath$inputName$inputExt
 outputPath=$(pwd)"/"$(cat config.json | jq -r '.output.path')
 outputName=$(cat config.json | jq -r '.output.name'); if [[ "$outputName" == "" ]]; then outputName=$inputName; fi
 outputExt=$(cat config.json | jq -r '.output.ext'); if [[ "$outputExt" == "" ]]; then outputExt=".md"; fi
-output=$outputPath$outputName$outputExt
+outputPrefix=$(cat config.json | jq -r '.output.prefix');
+outputPostfix=$(cat config.json | jq -r '.output.postfix');
+output=$outputPath$outputPrefix$outputName$outputPostfix$outputExt
 
 # sign
 start_sign=$(cat config.json | jq -r '.sign.Start'); if [[ "$start_sign" == "" ]]; then start_sign="/*==="; fi

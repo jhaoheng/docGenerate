@@ -4,10 +4,12 @@
 		"path":""
 	},
 	"output":{
-		"Default_info":"Path=./ ; name=input.name ; ext=.md",
+		"Default_info":"Path=./ ; name=input.name ; ext=.md ; prefix='' ; postfix='' ",
 		"path":"",
 		"name":"",
-		"ext":""
+		"ext":"",
+		"prefix":"",
+		"postfix":""
 	},
 	"sign":{
 		"Default_info":"Start='/*===' ; End='===*/' ; Length=5",
