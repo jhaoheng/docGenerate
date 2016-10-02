@@ -56,7 +56,7 @@ if [ ! -e "$input" ]; then
 	exit
 fi
 
-set -f
+set -f # disable '*' extension
 
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'line=($(cat $input))'
 maxLine=$(cat $input | wc -l);
