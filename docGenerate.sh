@@ -56,6 +56,8 @@ if [ ! -e "$input" ]; then
 	exit
 fi
 
+set -f
+
 IFS=$'\r\n' GLOBIGNORE='*' command eval  'line=($(cat $input))'
 maxLine=$(cat $input | wc -l);
 rm $output
@@ -68,7 +70,6 @@ for (( i = 0; i < $maxLine+1; i++ )); do
 	# echo "${line[$i]}"
 	
 	detect=${line[$i]:0:$sign_length}
-	# echo $detect
 
 	if [ "$detect" == $start_sign ]; then
 		printLine=true
@@ -87,7 +88,7 @@ for (( i = 0; i < $maxLine+1; i++ )); do
 	fi
 
 done
-
+set +f
 echo ""
 echo "============"
 echo ""

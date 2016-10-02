@@ -1,3 +1,10 @@
+// comment_1
+// comment_2
+
+/*
+ * comment_3
+ */
+
 /*===
 ## #1
  
@@ -36,7 +43,7 @@ code.....
 - when output file need text wraps automatically, please add a 'space' in the line
  
 【BODY】
- 
+
 ```
 {
     "email":"{{email}}",

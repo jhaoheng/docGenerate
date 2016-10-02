@@ -29,7 +29,6 @@
 - when output file need text wraps automatically, please add a 'space' in the line
  
 【BODY】
- 
 ```
 {
     "email":"{{email}}",
